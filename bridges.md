@@ -29,5 +29,12 @@ graph.allDFS([&](int v){
 ## Problems
 
 - [One-Way Streets (CEOI 2017)](https://ceoi2017.acm.si/files/ceoi2017-statements-day1.zip)
+- [Tourist Reform](http://codeforces.com/contest/732/problem/F)
+- [Break Up](http://codeforces.com/contest/700/problem/C)
+- [Critical Edges](https://www.spoj.com/problems/EC_P/)
+- [Submerging Islands](https://www.spoj.com/problems/SUBMERGE/)
+- [King Graffs Defense](https://www.spoj.com/problems/GRAFFDEF/)
 
 ## Sources
+
+- http://codeforces.com/blog/entry/55219
