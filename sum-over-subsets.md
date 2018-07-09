@@ -26,6 +26,7 @@ for (auto i=0; i<n; ++i)
 - [Uchiha and Two Products](https://www.hackerearth.com/problem/algorithm/uchiha-brothers-and-two-products-circuit/)
 - [Strange Functions](https://www.codechef.com/IPC15P2B/problems/STR_FUNC)
 - [Varying Kibibits](https://codeforces.com/contest/800/problem/D)
+- [Wężę (JOI 2018)](https://kiwi.ii.uni.wroc.pl/c/sl18/p/wez/)
 
 ## Sources
 
