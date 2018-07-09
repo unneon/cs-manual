@@ -32,7 +32,6 @@ graph.allDFS([&](int v){
 - [Tourist Reform](http://codeforces.com/contest/732/problem/F)
 - [Break Up](http://codeforces.com/contest/700/problem/C)
 - [Critical Edges](https://www.spoj.com/problems/EC_P/)
-- [Submerging Islands](https://www.spoj.com/problems/SUBMERGE/)
 - [King Graffs Defense](https://www.spoj.com/problems/GRAFFDEF/)
 
 ## Sources
