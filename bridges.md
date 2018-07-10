@@ -7,7 +7,7 @@ auto t = 0;
 auto enter = vector<int>(n, -1);
 auto bridge = vector<bool>(n, false);
 auto parent = vector<int>(n, -1);
-auto low = vector<int>(n, 0);
+auto low = vector<int>(n, -1);
 auto backburn = vector<bool>(n, false);
 graph.allDFS([&](int v){
 	enter[v] = t++;
