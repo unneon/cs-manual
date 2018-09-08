@@ -81,8 +81,6 @@ private:
 - [Lodziarnia (ONTAK 2018)](https://sio2.mimuw.edu.pl/c/wiekuisty_ontak2018/p/lod/)
 - [Nadajniki (ONTAK 2018)](https://sio2.mimuw.edu.pl/c/wiekuisty_ontak2018/p/nad/)
 - Heroldzi (CEOI 2009)
-- [Podział](https://sio2.staszic.waw.pl/c/zaawansowane-kolko-20172018/p/pod/)
-- [Kantory](https://sio2.staszic.waw.pl/c/zaawansowane-kolko-20172018/p/kan/)
 
 ## Sources
 

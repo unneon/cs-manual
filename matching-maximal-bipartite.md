@@ -31,6 +31,6 @@ bool implTM(int v, vector<int>& match, vector<bool>& visit) const {
 
 ## Problems
 
-- [Tug Of War (BOI 2015)](https://sio2.staszic.waw.pl/c/wwi-2018-konkurs-kwalifikacyjny/p/tug/)
+- [Tug Of War (BOI 2015)](https://szkopul.edu.pl/problemset/problem/YupIvX6EbqhRJsxUZ4CpMxC6/site/?key=statement)
 
 ## Sources
