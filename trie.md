@@ -67,5 +67,8 @@ struct Node : BaseNode<Node, char, 'a', 26> {
 
 - [Censoring (USACO 2015 February)](http://www.usaco.org/index.php?page=viewproblem2&cpid=533)
 - [Viruses (VIIth POI)](https://szkopul.edu.pl/problemset/problem/nnyNdoueeXmWIzMJhLtp3IvG/site/?key=statement)
+- [Censored! (ACM ICPC 2001. Northeastern European Region, Northern Subregion)](http://acm.timus.ru/problem.aspx?space=1&num=1158)
 
 ## Sources
+
+- https://codeforces.com/blog/entry/14854
