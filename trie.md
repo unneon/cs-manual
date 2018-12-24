@@ -3,9 +3,12 @@
 ## Code
 
 ```cpp
-template <typename Node, typename A, char _a0, int alpha> struct BaseNode {
-    static const char a0 = _a0;
+template <typename Node, typename A, A _a0, int alpha> struct BaseNode {
+    static const A a0 = _a0;
     explicit BaseNode(Node* parent):parent(parent),suflink(nullptr){ fill(kids.begin(), kids.end(), nullptr); }
+    Node* extend(int ic) {
+        return not kids[ic] and parent ? suflink->extend(ic) : kids[ic] ? kids[ic] : (Node*)this;
+    }
     Node* parent, *suflink;
     array<Node*, alpha> kids;
 };
@@ -31,13 +34,8 @@ template <typename Node> struct Trie {
     }
     void buildSuflinks() {
         BFS([&](Node* v){
-            v->suflink = v == root or v->parent == root ? root : extend(v->parent->suflink, (int)(find(v->parent->kids.begin(), v->parent->kids.end(), v) - v->parent->kids.begin()));
+            v->suflink = v == root or v->parent == root ? root : v->parent->suflink->extend((int)(find(v->parent->kids.begin(), v->parent->kids.end(), v) - v->parent->kids.begin()));
         });
-    }
-    Node* extend(Node* v, int ic) {
-        while (not v->kids[ic] and v->parent)
-            v = v->suflink;
-        return v->kids[ic] ? v->kids[ic] : v;
     }
     Node* root;
 };
@@ -47,13 +45,7 @@ template <typename Node> struct Trie {
 
 ```cpp
 struct Node : BaseNode<Node, char, 'a', 26> {
-    Node(Node* parent):
-        BaseNode(parent),
-        depth(parent ? parent->depth + 1 : 0),
-        mark(false)
-    {
-        fill(extendCache.begin(),extendCache.end(),nullptr);
-    }
+    Node(Node* parent):BaseNode(parent),depth(parent ? parent->depth + 1 : 0){}
     Node* fastExtend(int ic) {
         if (not extendCache[ic]) {
             if (kids[ic])
@@ -66,13 +58,14 @@ struct Node : BaseNode<Node, char, 'a', 26> {
         return extendCache[ic];
     }
     int depth;
-    bool mark;
-    array<Node*, 26> extendCache;
+    bool mark = false;
+    array<Node*, 26> extendCache{};
 };
 ```
 
 ## Problems
 
 - [Censoring (USACO 2015 February)](http://www.usaco.org/index.php?page=viewproblem2&cpid=533)
+- [Viruses (VIIth POI)](https://szkopul.edu.pl/problemset/problem/nnyNdoueeXmWIzMJhLtp3IvG/site/?key=statement)
 
 ## Sources
