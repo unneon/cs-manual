@@ -11,7 +11,7 @@ template <unsigned m> struct Mint {
     Mint(unsigned long long raw):val(raw%m){}
     friend Mint operator+(Mint a, Mint b) { return a.val + b.val; }
     friend Mint operator-(Mint a, Mint b) { return m + a.val - b.val; }
-    friend Mint operator*(Mint a, Mint b) { return 1ll * a.val * b.val; }
+    friend Mint operator*(Mint a, Mint b) { return 1ull * a.val * b.val; }
     friend Mint operator/(Mint a, Mint b) { return a * qpow(b, m-2); }
     friend Mint& operator+=(Mint& a, Mint b) { return a = a + b; }
     friend Mint& operator-=(Mint& a, Mint b) { return a = a - b; }
