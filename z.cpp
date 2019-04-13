@@ -5,7 +5,8 @@
 /// Guarantee: vector<int> zAlgorithm(
 /// Dependencies:
 /// Parent:
-vector<int> zAlgorithm(int n, const string& text) {
+vector<int> zAlgorithm(const string& text) {
+	auto n = (int)text.size();
 	auto pref = vector<int>(n, 0);
 	auto q = 1;
 	for (auto i=1; i<n; ++i) {
