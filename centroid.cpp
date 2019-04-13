@@ -1,8 +1,10 @@
-# Centroid decomposition
-
-## Code
-
-```cpp
+/// Name: Centroid
+/// Description:
+/// Detail:
+/// Request: centroid
+/// Guarantee: void centroid(
+/// Dependencies: graph, dfs-impl
+/// Parent: graph
 template <typename F> void centroid(F f) const {
 	auto visit = vector<bool>(size(), false);
 	auto subsize = vector<int>(size());
@@ -29,10 +31,3 @@ int findCentroid(int v, int root, vector<bool>& visit, const vector<int>& subsiz
 			return findCentroid(u, root, visit, subsize);
 	return v;
 }
-```
-
-## Problems
-
-- [Ciel the Commander](https://codeforces.com/contest/321/problem/C)
-
-## Sources

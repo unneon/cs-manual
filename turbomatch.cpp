@@ -1,8 +1,10 @@
-# Maximal bipartite matching
-
-## Code
-
-```cpp
+/// Name: Turbomatching
+/// Description: Maximal bipartite matching
+/// Detail:
+/// Request: turbomatch
+/// Guarantee: vector<int> turbomatch(
+/// Dependencies: graph
+/// Parent: graph
 vector<int> turbomatch() const {
 	auto match = vector<int>(size(), -1);
 	auto visit = vector<bool>(size(), false);
@@ -27,10 +29,3 @@ bool implTM(int v, vector<int>& match, vector<bool>& visit) const {
 	}
 	return false;
 }
-```
-
-## Problems
-
-- [Tug Of War (BOI 2015)](https://szkopul.edu.pl/problemset/problem/YupIvX6EbqhRJsxUZ4CpMxC6/site/?key=statement)
-
-## Sources

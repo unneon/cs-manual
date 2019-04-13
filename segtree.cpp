@@ -1,8 +1,10 @@
-# Segment tree
-
-## Code
-
-```cpp
+/// Name: Segment tree
+/// Description:
+/// Detail:
+/// Request: Segtree
+/// Guarantee: struct Segtree {
+/// Dependencies:
+/// Parent:
 template <typename T> struct Segtree {
     Segtree(int n):base(1){
         while (base < n) base *= 2;
@@ -22,8 +24,3 @@ template <typename T> struct Segtree {
     int base;
     vector<T> nodes;
 };
-```
-
-## Problems
-
-## Sources

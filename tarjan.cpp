@@ -1,8 +1,10 @@
-# Tarjan's strongly connected components
-
-## Code
-
-```cpp
+/// Name: Tarjan
+/// Description: Strongly connected components
+/// Detail:
+/// Request: tarjan
+/// Guarantee: void tarjan(
+/// Dependencies: graph, dfs-all
+/// Parent: graph
 template <typename F1> void tarjan(F1 f1) const {
     auto enter = vector<int>(size(), -1);
     auto low = vector<int>(size(), -1);
@@ -30,8 +32,3 @@ template <typename F1> void tarjan(F1 f1) const {
             low[v] = min(low[v], enter[u]);
     });
 }
-```
-
-## Problems
-
-## Sources

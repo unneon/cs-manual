@@ -1,28 +1,31 @@
-# Splay
-
-## Code
-```cpp
-template <typename Node> struct BaseNode {
-	BaseNode():left(nullptr),right(nullptr),parent(nullptr){}
-	~BaseNode() { delete left; delete right; }
-	Node* cutLeft() { auto r = left; if (left) left = left->parent = nullptr; return r; }
-	Node* cutRight() { auto r = right; if (right) right = right->parent = nullptr; return r; }
-	void tieLeft(Node* c) { if (c) c->parent = (Node*)this, left = c; }
-	void tieRight(Node* c) { if (c) c->parent = (Node*)this, right = c; }
-	void replaceChild(Node* c1, Node* c2) {
-		(left == c1 ? left : right) = c2;
-		if (c2)
-			c2->parent = (Node*)this;
-		c1->parent = nullptr;
-	}
-	bool isLeft() const { return parent->left == (Node*)this; }
-	bool isRight() const { return parent->right == (Node*)this; }
-	Node* left;
-	Node* right;
-	Node* parent;
-};
-
+/// Name: Splay
+/// Description:
+/// Detail:
+/// Request: Splay
+/// Guarantee: struct Splay {
+/// Dependencies:
+/// Parent:
 template <typename Node> struct Splay {
+
+	struct BaseNode {
+		BaseNode():left(nullptr),right(nullptr),parent(nullptr){}
+		~BaseNode() { delete left; delete right; }
+		Node* cutLeft() { auto r = left; if (left) left = left->parent = nullptr; return r; }
+		Node* cutRight() { auto r = right; if (right) right = right->parent = nullptr; return r; }
+		void tieLeft(Node* c) { if (c) c->parent = (Node*)this, left = c; }
+		void tieRight(Node* c) { if (c) c->parent = (Node*)this, right = c; }
+		void replaceChild(Node* c1, Node* c2) {
+			(left == c1 ? left : right) = c2;
+			if (c2)
+				c2->parent = (Node*)this;
+			c1->parent = nullptr;
+		}
+		bool isLeft() const { return parent->left == (Node*)this; }
+		bool isRight() const { return parent->right == (Node*)this; }
+		Node* left;
+		Node* right;
+		Node* parent;
+	};
 
 	Splay():root(nullptr){}
 	Splay(Node* root):root(root){}
@@ -116,10 +119,3 @@ template <typename Node> struct Splay {
 	Node* root;
 
 };
-```
-
-## Problems
-- [Orderset](https://www.spoj.com/problems/ORDERSET/) SPOJ
-- [Bal](https://sio2.mimuw.edu.pl/c/wiekuisty_ontak2017/p/bal/) ONTAK 2017
-
-## Sources

@@ -1,8 +1,10 @@
-# Modular arithmetic
-
-## Code
-
-```cpp
+/// Name: Modulo
+/// Description: Modular arithmetic
+/// Detail:
+/// Request: Mint
+/// Guarantee: struct Mint {
+/// Dependencies: qpow
+/// Parent:
 template <unsigned m> struct Mint {
     Mint():val(0){}
     Mint(int raw):val((raw%m+m)%m){}
@@ -22,8 +24,3 @@ template <unsigned m> struct Mint {
     friend ostream& operator<<(ostream& out, Mint x) { return out << x.val; }
     unsigned val;
 };
-```
-
-## Problems
-
-## Sources

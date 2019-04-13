@@ -1,8 +1,10 @@
-# Find And Union
-
-## Code
-
-```cpp
+/// Name: FU
+/// Description: Find & Union
+/// Detail:
+/// Request: FU
+/// Guarantee: struct FU {
+/// Dependencies:
+/// Parent:
 struct FU {
 	FU(int n):link(n,-1),rank(n,0){}
 	int find(int i) const { return link[i] == -1 ? i : (link[i] = find(link[i])); }
@@ -17,8 +19,3 @@ struct FU {
 	mutable vector<int> link;
 	vector<int> rank;
 };
-```
-
-## Problems
-
-## Sources
