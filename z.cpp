@@ -2,7 +2,7 @@
 /// Description: Pref function
 /// Detail:
 /// Request: zalgo
-/// Guarantee: vector<int> zalog(
+/// Guarantee: vector<int> zalgo(
 /// Dependencies:
 /// Parent:
 vector<int> zalgo(const string& text) {
