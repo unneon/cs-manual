@@ -1,11 +1,11 @@
 /// Name: Z
 /// Description: Pref function
 /// Detail:
-/// Request: zAlgorithm
-/// Guarantee: vector<int> zAlgorithm(
+/// Request: zalgo
+/// Guarantee: vector<int> zalog(
 /// Dependencies:
 /// Parent:
-vector<int> zAlgorithm(const string& text) {
+vector<int> zalgo(const string& text) {
 	auto n = (int)text.size();
 	auto pref = vector<int>(n, 0);
 	auto q = 1;
