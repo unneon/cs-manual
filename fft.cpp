@@ -6,7 +6,6 @@
 /// Dependencies:
 /// Parent:
 template <typename C, bool invert> vector<C> dft(vector<C> a) {
-    using R = typename C::value_type;
     auto n = (int)a.size();
     for (auto i=1, j=0; i<n; ++i) {
         auto bit = n >> 1;
@@ -16,12 +15,12 @@ template <typename C, bool invert> vector<C> dft(vector<C> a) {
         if (i < j)
             swap(a[i], a[j]);
     }
-    auto pi = acos((R)-1);
+    auto pi = acos((typename C::value_type)-1);
     for (auto l=2; l<=n; l<<=1) {
         auto angle = (invert ? -1 : 1) * 2 * pi / l;
-        auto wl = polar<R>(1, angle);
+        auto wl = C(cos(angle), sin(angle));
         for (auto i=0; i<n; i+=l) {
-            auto w = (C)1;
+            auto w = C(1, 0);
             for (auto j=0; j<l/2; ++j) {
                 auto y0 = a[i+j];
                 auto y1 = a[i+j+l/2] * w;
@@ -40,8 +39,8 @@ template <typename C> vector<C> fft(vector<C> a, vector<C> b) {
     auto n = 1;
     while (n < (int)a.size() + (int)b.size() - 1)
         n *= 2;
-    a.resize(n, (C)0);
-    b.resize(n, (C)0);
+    a.resize(n, 0);
+    b.resize(n, 0);
     a = dft<C, false>(move(a));
     b = dft<C, false>(move(b));
     for (auto i=0; i<n; ++i)
