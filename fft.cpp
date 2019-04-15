@@ -1,5 +1,5 @@
 /// Name: FFT
-/// Description:
+/// Description: Fast Fourier Transform
 /// Detail:
 /// Request: fft
 /// Guarantee: vector<C> fft(

@@ -1,5 +1,5 @@
 /// Name: DFS (impl)
-/// Description:
+/// Description: Depth-First Search
 /// Detail:
 /// Request: implDFS
 /// Guarantee: void implDFS(

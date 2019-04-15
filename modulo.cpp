@@ -1,5 +1,5 @@
 /// Name: Modulo
-/// Description: Modular arithmetic
+/// Description: arithmetic
 /// Detail:
 /// Request: Mint
 /// Guarantee: struct Mint {

@@ -1,5 +1,5 @@
 /// Name: 2SAT
-/// Description:
+/// Description: 2-satisfiability
 /// Detail:
 /// Request: SAT2
 /// Guarantee: struct SAT2 {

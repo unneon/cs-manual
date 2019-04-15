@@ -1,5 +1,5 @@
 /// Name: DFS (all)
-/// Description:
+/// Description: Depth-First Search
 /// Detail:
 /// Request: allDFS
 /// Guarantee: void allDFS(

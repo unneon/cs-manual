@@ -1,5 +1,5 @@
 /// Name: Li Chao (ptr)
-/// Description:
+/// Description: tree
 /// Detail:
 /// Request: LiChaoPtr
 /// Guarantee: struct LiChaoPtr {

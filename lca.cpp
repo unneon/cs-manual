@@ -1,5 +1,5 @@
 /// Name: LCA
-/// Description:
+/// Description: Lowest Common Ancestor
 /// Detail:
 /// Request: preprocessLCA
 /// Guarantee: LCA<l> preprocessLCA(

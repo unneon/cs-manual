@@ -1,5 +1,5 @@
 /// Name: FU
-/// Description: Find & Union
+/// Description: Find & Union on disjoint sets
 /// Detail:
 /// Request: FU
 /// Guarantee: struct FU {

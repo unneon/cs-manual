@@ -1,5 +1,5 @@
 /// Name: Centroid
-/// Description:
+/// Description: decomposition
 /// Detail:
 /// Request: centroid
 /// Guarantee: void centroid(

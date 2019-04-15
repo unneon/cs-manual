@@ -1,5 +1,5 @@
 /// Name: Modulo (dynamic)
-/// Description: Modular arithmetic with dynamic m
+/// Description: arithmetic
 /// Detail:
 /// Request: Dmint
 /// Guarantee: struct Dmint {
