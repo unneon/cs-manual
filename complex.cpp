@@ -6,14 +6,13 @@
 /// Dependencies:
 /// Parent:
 template <typename R> struct Complex {
-    using value_type = R;
     Complex(R a = 0, R b = 0):a(a),b(b){}
-    friend Complex operator+(const Complex& a, const Complex& b) { return Complex<R>(a.a + b.a, a.b + b.b); }
-    friend Complex operator-(const Complex& a, const Complex& b) { return Complex<R>(a.a - b.a, a.b - b.b); }
-    friend Complex operator*(const Complex& a, const Complex& b) { return Complex<R>(a.a * b.a - a.b * b.b, a.a * b.b + a.b * b.a); }
-    friend Complex operator/(const Complex& a, const R& b) { return Complex<R>(a.a / b, a.b / b); }
-    friend Complex& operator*=(Complex& a, const Complex& b) { return a = a * b; }
-    friend Complex& operator/=(Complex& a, const R& b) { return a = a / b; }
+    friend Complex operator+(const Complex& x, const Complex& y) { return Complex(x.a + y.a, x.b + y.b); }
+    friend Complex operator-(const Complex& x, const Complex& y) { return Complex(x.a - y.a, x.b - y.b); }
+    friend Complex operator*(const Complex& x, const Complex& y) { return Complex(x.a * y.a - x.b * y.b, x.a * y.b + x.b * y.a); }
+    friend Complex operator/(const Complex& x, const R& y) { return Complex(x.a / y, x.b / y); }
+    friend Complex& operator*=(Complex& x, const Complex& y) { return x = x * y; }
+    friend Complex& operator/=(Complex& x, const R& y) { return x = x / y; }
     const R& real() const { return a; }
     R a, b;
 };
