@@ -5,7 +5,7 @@
 /// Guarantee: Graph dominatorTree(
 /// Dependencies: graph, dfs
 /// Parent: graph
-Graph dominatorTree(int source) {
+Graph dominatorTree(int source) const {
 	static auto iota = [](int n) { auto xs = vector<int>(n); std::iota(xs.begin(), xs.end(), 0); return xs; };
 	struct SpecialFU {
 		SpecialFU(int n, const vector<int>& sdom):up(n,-1),label(iota(n)),sdom(sdom){}
