@@ -6,21 +6,21 @@
 /// Dependencies:
 /// Parent:
 struct Sieve {
-    Sieve(int n):prime(n+1,true),fac(n+1,1){
-        prime[0] = prime[1] = false;
-        for (auto p=2; p<=n; ++p)
-            if (prime[p]) {
-                fac[p] = p;
-                for (auto j=2*p; j<=n; j+=p)
-                    prime[j] = false, fac[j] = p;
-            }
-    }
-    vector<int> factor(int i) const {
-        auto ps = vector<int>();
-        while (i > 1)
-            ps.push_back(fac[i]), i /= fac[i];
-        return ps;
-    }
+	Sieve(int n):prime(n+1,true),fac(n+1,1){
+		prime[0] = prime[1] = false;
+		for (auto p=2; p<=n; ++p)
+			if (prime[p]) {
+				fac[p] = p;
+				for (auto j=2*p; j<=n; j+=p)
+					prime[j] = false, fac[j] = p;
+			}
+	}
+	vector<int> factor(int i) const {
+		auto ps = vector<int>();
+		while (i > 1)
+			ps.push_back(fac[i]), i /= fac[i];
+		return ps;
+	}
 	struct Count { int p, alpha; };
 	vector<Count> counts(int i) const {
 		auto fs = vector<Count>();
@@ -31,17 +31,17 @@ struct Sieve {
 				i /= p, ++l;
 			fs.push_back(Count{p, l});
 		}
-        return fs;
+		return fs;
 	}
-    vector<int> uniqfacs(int i) const {
-        auto ps = vector<int>();
-        while (i > 1) {
-            ps.push_back(fac[i]);
-            while (ps.back() == fac[i])
-                i /= fac[i];
-        }
-        return ps;
-    }
+	vector<int> uniqfacs(int i) const {
+		auto ps = vector<int>();
+		while (i > 1) {
+			ps.push_back(fac[i]);
+			while (ps.back() == fac[i])
+				i /= fac[i];
+		}
+		return ps;
+	}
 	vector<int> divisors(int i) const {
 		auto ds = vector<int>({1});
 		for (auto c : counts(i)) {
@@ -52,13 +52,13 @@ struct Sieve {
 		}
 		return ds;
 	}
-    vector<int> allPrimes() const {
-        vector<int> ps;
-        for (auto p=2; p<(int)prime.size(); ++p)
-            if (prime[p])
-                ps.push_back(p);
-        return ps;
-    }
-    vector<bool> prime;
-    vector<int> fac;
+	vector<int> allPrimes() const {
+		vector<int> ps;
+		for (auto p=2; p<(int)prime.size(); ++p)
+			if (prime[p])
+				ps.push_back(p);
+		return ps;
+	}
+	vector<bool> prime;
+	vector<int> fac;
 };
