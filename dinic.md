@@ -21,7 +21,7 @@ template <typename T, T oo> struct FlowGraph {
 			auto dist = dinicBFS(source);
 			if (dist[sink] == -1)
 				break;
-			auto next = vector<int>(edges.size(), 0); 
+			auto next = vector<int>(edges.size(), 0);
 			dinicPush(source, +oo, sink, next, dist);
 		}
 	}
