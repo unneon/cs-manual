@@ -1,7 +1,6 @@
 /// Name: FU
 /// Description: Find & Union on disjoint sets
 /// Detail:
-/// Request: FU
 /// Guarantee: struct FU {
 /// Dependencies:
 /// Parent:

@@ -1,7 +1,6 @@
 /// Name: Modulo (multiple)
 /// Description: arithmetic
 /// Detail:
-/// Request: MultiMint
 /// Guarantee: struct MultiMint {
 /// Dependencies: modulo
 /// Parent:

@@ -1,7 +1,6 @@
 /// Name: Turbomatching
 /// Description: Maximal bipartite matching
 /// Detail:
-/// Request: turbomatch
 /// Guarantee: vector<int> turbomatch(
 /// Dependencies: graph
 /// Parent: graph

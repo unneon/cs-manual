@@ -1,7 +1,6 @@
 /// Name: FFT
 /// Description: Fast Fourier Transform
 /// Detail:
-/// Request: FFT
 /// Guarantee: struct FFT {
 /// Dependencies:
 /// Parent:

@@ -1,7 +1,6 @@
 /// Name: Modulo
 /// Description: arithmetic
 /// Detail:
-/// Request: Mint
 /// Guarantee: struct Mint {
 /// Dependencies: qpow
 /// Parent:

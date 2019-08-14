@@ -1,7 +1,6 @@
 /// Name: Splay
 /// Description: tree
 /// Detail:
-/// Request: Splay
 /// Guarantee: struct Splay {
 /// Dependencies:
 /// Parent:

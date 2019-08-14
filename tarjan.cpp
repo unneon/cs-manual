@@ -1,7 +1,6 @@
 /// Name: Tarjan
 /// Description: Strongly connected components
 /// Detail:
-/// Request: tarjan
 /// Guarantee: void tarjan(
 /// Dependencies: graph, dfs-all
 /// Parent: graph

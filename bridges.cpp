@@ -1,7 +1,6 @@
 /// Name: Bridges
 /// Description:
 /// Detail:
-/// Request: bridges
 /// Guarantee: vector<bool> bridges(
 /// Dependencies: graph, dfs-all
 /// Parent: graph

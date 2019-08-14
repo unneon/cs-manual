@@ -1,7 +1,6 @@
 /// Name: Bit matrix
 /// Description: Vectorized Matrix<bool>
 /// Detail:
-/// Request: BitMatrix
 /// Guarantee: struct BitMatrix {
 /// Dependencies:
 /// Parent:

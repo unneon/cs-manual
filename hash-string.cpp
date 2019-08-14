@@ -1,7 +1,6 @@
 /// Name: String hashing
 /// Description:
 /// Detail:
-/// Request: Hashes
 /// Guarantee: struct Hashes {
 /// Dependencies: modulo
 /// Parent:

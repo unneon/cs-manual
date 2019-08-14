@@ -1,7 +1,6 @@
 /// Name: Modulo (dynamic)
 /// Description: arithmetic
 /// Detail:
-/// Request: Dmint
 /// Guarantee: struct Dmint {
 /// Dependencies: qpow
 /// Parent:

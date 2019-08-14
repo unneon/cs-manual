@@ -1,7 +1,6 @@
 /// Name: DFS (impl)
 /// Description: Depth-First Search
 /// Detail:
-/// Request: implDFS
 /// Guarantee: void implDFS(
 /// Dependencies: graph, dummyf
 /// Parent: graph

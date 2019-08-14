@@ -1,7 +1,6 @@
 /// Name: Dominator tree
 /// Description:
 /// Detail:
-/// Request: dominatorTree
 /// Guarantee: Graph dominatorTree(
 /// Dependencies: graph, dfs
 /// Parent: graph

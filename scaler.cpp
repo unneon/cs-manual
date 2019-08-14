@@ -1,7 +1,6 @@
 /// Name: Scaler
 /// Description:
 /// Detail:
-/// Request: Scaler
 /// Guarantee: struct Scaler {
 /// Dependencies:
 /// Parent:

@@ -1,7 +1,6 @@
 /// Name: Dummyf
 /// Description:
 /// Detail:
-/// Request: Dummyf
 /// Guarantee: struct Dummyf {
 /// Dependencies:
 /// Parent:

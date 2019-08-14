@@ -1,7 +1,6 @@
 /// Name: Binary search (float)
 /// Description:
 /// Detail:
-/// Request: binsearchf
 /// Guarantee: T binsearchf(
 /// Dependencies:
 /// Parent:

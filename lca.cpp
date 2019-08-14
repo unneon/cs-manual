@@ -1,7 +1,6 @@
 /// Name: LCA
 /// Description: Lowest Common Ancestor
 /// Detail:
-/// Request: preprocessLCA
 /// Guarantee: LCA<l> preprocessLCA(
 /// Dependencies: graph, dfs
 /// Parent: graph

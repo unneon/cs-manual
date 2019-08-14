@@ -1,7 +1,6 @@
 /// Name: Graph
 /// Description:
 /// Detail:
-/// Request: Graph
 /// Guarantee: struct Graph {
 /// Dependencies:
 /// Parent:

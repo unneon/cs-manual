@@ -1,7 +1,6 @@
 /// Name: Matrix
 /// Description:
 /// Detail:
-/// Request: Matrix
 /// Guarantee: struct Matrix {
 /// Dependencies:
 /// Parent:

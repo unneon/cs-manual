@@ -1,7 +1,6 @@
 /// Name: Transposed graph
 /// Description:
 /// Detail:
-/// Request: transposed
 /// Guarantee: Graph transposed(
 /// Dependencies: graph
 /// Parent: graph

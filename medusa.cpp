@@ -1,7 +1,6 @@
 /// Name: Medusa
 /// Description: Graph with only one outgoing edge
 /// Detail:
-/// Request: Medusa
 /// Guarantee: struct Medusa {
 /// Dependencies:
 /// Parent:

@@ -1,7 +1,6 @@
 /// Name: Li Chao (ptr)
 /// Description: tree
 /// Detail:
-/// Request: LiChaoPtr
 /// Guarantee: struct LiChaoPtr {
 /// Dependencies:
 /// Parent:

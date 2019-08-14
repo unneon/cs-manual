@@ -1,7 +1,6 @@
 /// Name: Z
 /// Description: Pref function
 /// Detail:
-/// Request: zalgo
 /// Guarantee: vector<int> zalgo(
 /// Dependencies:
 /// Parent:

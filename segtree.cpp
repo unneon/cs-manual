@@ -1,7 +1,6 @@
 /// Name: Segment tree
 /// Description:
 /// Detail:
-/// Request: Segtree
 /// Guarantee: struct Segtree {
 /// Dependencies:
 /// Parent:

@@ -1,7 +1,6 @@
 /// Name: Takeover queue
 /// Description:
 /// Detail:
-/// Request: TakeoverQueue
 /// Guarantee: struct TakeoverQueue {
 /// Dependencies:
 /// Parent:

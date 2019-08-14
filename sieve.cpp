@@ -1,7 +1,6 @@
 /// Name: Sieve of Eratosthenes
 /// Description:
 /// Detail:
-/// Request: Sieve
 /// Guarantee: struct Sieve {
 /// Dependencies:
 /// Parent:

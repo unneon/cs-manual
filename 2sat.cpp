@@ -1,7 +1,6 @@
 /// Name: 2SAT
 /// Description: 2-satisfiability
 /// Detail:
-/// Request: SAT2
 /// Guarantee: struct SAT2 {
 /// Dependencies: graph, tarjan
 /// Parent:

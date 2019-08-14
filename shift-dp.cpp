@@ -1,7 +1,6 @@
 /// Name: Shifting DP
 /// Description: DP memory optimization
 /// Detail:
-/// Request: ShiftDP
 /// Guarantee: struct ShiftDP {
 /// Dependencies:
 /// Parent:

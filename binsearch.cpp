@@ -1,7 +1,6 @@
 /// Name: Binary search
 /// Description:
 /// Detail:
-/// Request: binsearch
 /// Guarantee: T binsearch(
 /// Dependencies:
 /// Parent:

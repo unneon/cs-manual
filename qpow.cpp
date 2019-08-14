@@ -1,7 +1,6 @@
 /// Name: Exponentiation
 /// Description:
 /// Detail:
-/// Request: qpow
 /// Guarantee: T qpow(
 /// Dependencies:
 /// Parent:

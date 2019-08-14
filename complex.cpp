@@ -1,7 +1,6 @@
 /// Name: Complex
 /// Description: arithmetic
 /// Detail:
-/// Request: Complex
 /// Guarantee: struct Complex {
 /// Dependencies:
 /// Parent:

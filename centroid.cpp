@@ -1,7 +1,6 @@
 /// Name: Centroid
 /// Description: decomposition
 /// Detail:
-/// Request: centroid
 /// Guarantee: void centroid(
 /// Dependencies: graph, dfs-impl
 /// Parent: graph

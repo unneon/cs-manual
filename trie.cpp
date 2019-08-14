@@ -1,7 +1,6 @@
 /// Name: Trie
 /// Description:
 /// Detail:
-/// Request: Trie
 /// Guarantee: struct Trie {
 /// Dependencies:
 /// Parent:

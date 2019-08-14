@@ -1,7 +1,6 @@
 /// Name: Li Chao
 /// Description: tree
 /// Detail:
-/// Request: LiChao
 /// Guarantee: struct LiChao {
 /// Dependencies:
 /// Parent:

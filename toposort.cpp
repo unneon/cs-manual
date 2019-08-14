@@ -1,7 +1,6 @@
 /// Name: Toposort
 /// Description:
 /// Detail:
-/// Request: toposort
 /// Guarantee: vector<int> toposort(
 /// Dependencies: graph
 /// Parent: graph
