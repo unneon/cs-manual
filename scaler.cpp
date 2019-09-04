@@ -15,7 +15,7 @@ template <typename T> struct Scaler {
 		}
 	};
 	int scale(const T& x) { return (int)(lower_bound(xs.begin(), xs.end(), x) - xs.begin()); }
-	const T& unscale(int i) { return xs[i]; }
+	typename vector<T>::const_reference unscale(int i) { return xs[i]; }
 	int size() const { return (int)xs.size(); }
 	vector<T> xs;
 };
